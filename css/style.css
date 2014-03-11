@@ -1729,6 +1729,7 @@
 		padding:0 9px;
 		height:auto;
 		color:#aaaaaa;
+		cursor:pointer;
 		overflow:hidden;
 	}
 
@@ -1801,6 +1802,24 @@
 		opacity:0;
 	}
 
+	.work:hover .work-img img{
+		opacity:0.2;
+	}
+
+	.work:hover .work-img .zoom{
+		top:50%;
+		opacity:1;
+		-webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+	.work:hover .work-img .detail{
+		bottom:50%;
+		opacity:1;
+		-webkit-transform: translateY(50%);
+		-moz-transform: translateY(50%);
+		transform: translateY(50%);
+	}
 
 /* isotope styles */
 
@@ -1812,7 +1831,6 @@
 	  pointer-events: none;
 	  z-index: 1;
 	}
-
 /**** Isotope CSS3 transitions ****/
 
 	.isotope,
