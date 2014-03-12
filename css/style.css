@@ -152,6 +152,10 @@
 		opacity:0.7;
 	}
 
+	.page-desc p {
+		text-transform: lowercase;
+	}
+
 	.dark{
 		color:#3c3c3c;
 	}
@@ -363,6 +367,20 @@
 		font-weight:400;
 		text-transform:uppercase;
 	}
+
+	.date {
+		width:100%;
+		max-width:670px;
+		margin:35px auto;
+		position:relative;
+		text-align:center;
+		color:white;
+		font-size:40px;
+		font-weight:400;
+		text-transform:uppercase;
+	}
+	
+
 
 /* Home Get Started Button */
 
@@ -944,7 +962,7 @@
 	#features{
 		background:url(../images/i1.jpg)top center repeat-x;
 		height:962x;
-		margin-top:20px;
+		margin-top:0px;
 	}
 
 	.f-iphone{
@@ -1453,7 +1471,7 @@
 
 	.owl-item .item p{
 		font-size:15px;
-		color:#a2a2a2;
+		color:#4e4e4e;
 	}
 /* Our Team Image Galleries */
 	
@@ -2964,3 +2982,15 @@
 	#back-top a:hover{
 		opacity:1;
 	}
+
+	.title {
+		float:left;
+		display:block;
+		width:50%;
+	}
+
+	.title h2 {
+		margin-top:0px;
+		color: #e70000;
+	}
+
