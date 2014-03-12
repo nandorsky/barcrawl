@@ -470,6 +470,7 @@
 		float:left;
 		position:absolute;
 		z-index:999;
+		width: 80%;
 	}
 
 	.navigation .logo a{

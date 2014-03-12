@@ -124,6 +124,10 @@ ul.timeline{
 	position: relative;
 }
 
+.title h2 {
+	font-size:20px;
+}
+
 }
 
 /* MAX 930px */
@@ -140,6 +144,10 @@ ul.timeline{
 
 .mobile-drop{
 	display:block;
+}
+
+.title h2 {
+	font-size:14px;
 }
 
 }
