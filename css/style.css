@@ -960,7 +960,7 @@
 /* Features */
 
 	#features{
-		background:url(../images/i1.jpg)top center repeat-x;
+		background-repeat: no-repeat;
 		height:962x;
 		margin-top:0px;
 	}
