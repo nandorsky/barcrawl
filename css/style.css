@@ -2993,3 +2993,15 @@
 		color: #e70000;
 	}
 
+	.bar {
+		float: right;
+		width:100%;
+		padding: 10px;
+	}
+
+	.bar img {
+		width:100px;
+		height: 100px;
+		display: block;
+	}
+
