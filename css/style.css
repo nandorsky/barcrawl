@@ -3038,7 +3038,18 @@
 }
 #instafeed img {
     width: 100%;
-    max-width: 100%}
+    max-width: 100%;
+    border-radius:6px;
+    margin-bottom: 8px;
+}
+.instagram {
+	padding-bottom:10px;
+}
+
+.instagram img {
+	width:60px;	
+}
+
 @media screen and (min-width:700px) {
     #instafeed {
     width: 600px;
@@ -3048,6 +3059,7 @@
     padding: 5px;
     width: 300px;
 }
+
 }@media screen and (min-width:900px) {
     #instafeed {
     width: 800px;
@@ -3062,4 +3074,5 @@
 }@media screen and (min-width:1300px) {
     #instafeed {
     width: 1200px;
+
 
