@@ -107,7 +107,7 @@ function onYouTubePlayerAPIReady() {
 			quality                : "default", //or “small”, “medium”, “large”, “hd720”, “hd1080”, “highres”
 			mute                   : false,
 			loop                   : true,
-			showControls           : false,
+			showControls           : true,
 			showAnnotations        : false,
 			printUrl               : true,
 			stopMovieOnClick       :false,
