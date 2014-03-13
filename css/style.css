@@ -3023,6 +3023,7 @@
     width: 300px;
     padding-left: 50px;
     max-width: 95%;
+    border-radius: 6px;
     margin: 20px auto;
     -webkit-transition: width 1s ease-in-out, margin .25s ease-in-out;
     -moz-transition: width 1s ease-in-out, margin .25s ease-in-out;
