@@ -960,9 +960,9 @@
 /* Features */
 
 	#features{
-		background-repeat: no-repeat;
-		height:962x;
-		margin-top:0px;
+		margin:50px auto 0;
+		background:url(../images/i3.jpg) center fixed;
+		padding:0 0 30px;
 	}
 
 	.f-iphone{
@@ -1594,8 +1594,18 @@
 		color:#2daae2;
 	}
 
+
 	.socials a i.fa-google-plus:hover{
 		color:#da2713;
+	}
+
+/* Past */
+
+	#past{
+
+		background-repeat: no-repeat;
+		height:962x;
+		margin-top:0px;
 	}
 
 /* Why Wisten */
