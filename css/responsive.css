@@ -33,6 +33,8 @@
 
 #slides {
 	background:url(../images/mobile.jpg) no-repeat;
+	height: 100%;
+	width:100%;
 }
 
 .mbYTP_wrapper {
