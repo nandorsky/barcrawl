@@ -306,6 +306,15 @@ ul.timeline{
 }
 
 
+#home {
+		width:100%;
+		height:auto;
+		position:relative;
+			background:blue;
+	}
+}
+
+
 }
 
 
