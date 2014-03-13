@@ -43,6 +43,13 @@
 		<div id="mobile">
 		<div id="slides">
 			<div class="slides-container">
+<!-- Javascript to mute video on scroll -->			
+<script type="text/javascript" language="javascript">
+function mute() {
+        document.getElementById('P3').data("mute","true");
+}
+</script>
+<!-- Javascript to mute video on scroll -->
 
 			<!-- Video -->
 			 <div id="P3" class="player video-container" data-property="{videoURL:'l-DNGQvcQm4',containment:'#slides',autoPlay:true, mute:false, startAt:0, opacity:1}"></div>
@@ -86,21 +93,6 @@
 			<a class="scroll home-button" href="#about" onclick="mute();">I WANT IN</a>
 			<!-- End Home Button -->
 			
-			<!-- Muted DIV Class -->
-			 <div id="mute" style="display:none;" class="player video-container" data-property="{videoURL:'I-DNGQvcQm4',containment:'#slides',autoPlay:true, mute:true, startAt:0, opacity:1}"></div>
-			 <!-- End Video -->
-			 
-			</div>
-
-<!-- Javascript to mute video on scroll -->			
-<script type="text/javascript" language="javascript">
-function mute() {
-        document.getElementById('P3').style.display = 'none';
-        document.getElementById('mute').style.display = 'block';
-}
-</script>
-<!-- Javascript to mute video on scroll -->
-
 		</div>
 		<!-- End Main -->
 		
