@@ -462,6 +462,23 @@ ul.timeline{
 	margin:40px auto;
 }
 
+.loader-item h2{
+		color:#f02d2d;
+		font-size: 14px!important;
+		margin:0 auto;
+		font: inherit;
+	}
+
+.loader-item {
+	  position: absolute;
+	  width: auto;
+	  height:height;
+	  margin: -25px 0 0 -25px;
+	  top:30%;
+	  left:30%;
+	  text-align:center;
+	}
+
 }
 
 /* MAX 480px */

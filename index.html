@@ -31,7 +31,7 @@
 
 		<div id="pageloader">   
             <div class="loader-item">
-               <img src="images/loading.gif" alt='loader' /><h2>TRANSPORTING YOU <br />THROUGH THE POST GRAD TIME MACHINE</h2>
+               <img src="images/loading.gif" alt='loader' /><h2>TRANSPORTING YOU VIA<br />THE POST GRAD TIME MACHINE</h2>
             </div>
         </div>
 
@@ -81,7 +81,7 @@
 
 
 			<!-- Home Description -->
-			<div class="home-desc">A trip back through time to a simpler place.</div>
+			<div class="home-desc">A trip back through time to a simpler place</div>
 			<!-- End Home Description -->
 			
 			<!-- Home Button -->
@@ -486,7 +486,10 @@ As we did last year, we will go to a collection of bars that we crushed in the m
         get: 'tagged',
         tagName: 'pgtimemachine',
         clientId: '1339ca1a513444938b518b0d96b06be0',
+        sortBy: 'most-liked',
         resolution: 'low_resolution',
+        limit: '60',
+        template: '<div id="instafeed-pic"><a href="#"><img src="{{image}}" /><p>{{caption}}</p></a></div>'
     });
     feed.run();
 </script>
