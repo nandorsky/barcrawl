@@ -370,7 +370,7 @@ As we did last year, we will go to a collection of bars that we crushed in the m
 
 				<p>Use the hashtag #PGTIMEMACHINE and see your photos display below.</p>
 			</div>
-				<div id="instafeed"></div> 
+				<ul id="instafeed" class="bxslider"></ul> 
 
 	
 	</section>
@@ -478,21 +478,41 @@ As we did last year, we will go to a collection of bars that we crushed in the m
 	<script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script>
 	<script type="text/javascript" src="js/jquery.fitvids.js"></script>
 	<script type="text/javascript" src="js/plugins.js"></script>
-
+	<!-- Instafeed.js -->
 	<script type="text/javascript" src="js/instafeed.min.js"></script>
+
+	<!-- bxSlider Javascript file -->
+<script src="js/jquery.bxslider.min.js"></script>
+<!-- bxSlider CSS file -->
+<link href="css/jquery.bxslider.css" rel="stylesheet" /></span>
 
 	<script type="text/javascript">
     var feed = new Instafeed({
         get: 'tagged',
         tagName: 'pgtimemachine',
         clientId: '1339ca1a513444938b518b0d96b06be0',
-        sortBy: 'most-liked',
         resolution: 'low_resolution',
         limit: '60',
-        template: '<div id="instafeed-pic"><a href="#"><img src="{{image}}" /><p>{{caption}}</p></a></div>'
+        template: '<li id="instafeed-pic"><a href="#"><img src="{{image}}" /><p>{{caption}}</p></a></li>'
     });
     feed.run();
+
+    $(document).ready(function(){
+  $('.bxslider').bxSlider();
+});
+
+    $('.bxslider').bxSlider({
+  minSlides: 2,
+  maxSlides: 15,
+  slideWidth: 306,
+  slideMargin: 10
+});
 </script>
+
+
+
+
+
 
 
 	 <!-- End JS Files -->
