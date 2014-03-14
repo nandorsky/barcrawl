@@ -19,6 +19,10 @@
 	<link rel="stylesheet" href="css/prettyPhoto.css" />
 	<link rel="stylesheet" href="css/responsive.css" />
 	<link rel="stylesheet" href="css/player/YTPlayer.css" />
+	<!-- bxSlider CSS file -->
+	<link href="css/jquery.bxslider.css" rel="stylesheet" /></span>
+	<!-- jQuery library (served from Google) -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 
 
 	
@@ -370,7 +374,16 @@ As we did last year, we will go to a collection of bars that we crushed in the m
 
 				<p>Use the hashtag #PGTIMEMACHINE and see your photos display below.</p>
 			</div>
-				<ul id="instafeed" class="bxslider"></ul> 
+			
+			<ul class="bxslider">
+				<li id="instafeed"></li>
+				<li><img src="images/instagram.png" /></li>
+				<li><img src="images/instagram.png" /></li>
+				<li><img src="images/instagram.png" /></li>
+			</ul>
+
+
+				<!--<ul id="instafeed" class="bxslider"></ul> -->
 
 	
 	</section>
@@ -483,8 +496,7 @@ As we did last year, we will go to a collection of bars that we crushed in the m
 
 		<!-- bxSlider Javascript file -->
 	<script src="js/jquery.bxslider.min.js"></script>
-	<!-- bxSlider CSS file -->
-	<link href="css/jquery.bxslider.css" rel="stylesheet" /></span>
+
 
 	<script type="text/javascript">
     var feed = new Instafeed({
@@ -493,33 +505,20 @@ As we did last year, we will go to a collection of bars that we crushed in the m
         clientId: '1339ca1a513444938b518b0d96b06be0',
         resolution: 'low_resolution',
         limit: '60',
-        template: '<li id="instafeed-pic"><a href="#"><img src="{{image}}" /><p>{{caption}}</p></a></li>'
+        template: '<img src="{{image}}" />'
     });
     feed.run();
+</script>
 
+<script>
     $(document).ready(function(){
   $('.bxslider').bxSlider();
 });
 
-    $('.bxslider').bxSlider({
-  minSlides: 2,
-  maxSlides: 15,
-  slideWidth: 306,
-  slideMargin: 10
-});
+
 </script>
 
-
-
-
-
-
-
 	 <!-- End JS Files -->
-
-<script>
-
-  </script>
 
 </body>
 
