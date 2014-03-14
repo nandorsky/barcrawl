@@ -19,10 +19,14 @@
 	<link rel="stylesheet" href="css/prettyPhoto.css" />
 	<link rel="stylesheet" href="css/responsive.css" />
 	<link rel="stylesheet" href="css/player/YTPlayer.css" />
-	<!-- bxSlider CSS file -->
-	<link href="css/jquery.bxslider.css" rel="stylesheet" /></span>
+		
+	<!-- Elastislide -->
+		<link rel="stylesheet" type="text/css" href="css/elastislide.css" />
+		<link rel="stylesheet" type="text/css" href="css/custom.css" />
+		<script src="js/modernizr.custom.17475.js"></script>
+	
 	<!-- jQuery library (served from Google) -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 
 
 	
@@ -375,7 +379,7 @@ As we did last year, we will go to a collection of bars that we crushed in the m
 				<p>Use the hashtag #PGTIMEMACHINE and see your photos display below.</p>
 			</div>
 			
-			<ul class="bxslider">
+			<ul class="elastislide-list jslider">
 				<li id="instafeed"></li>
 				<li><img src="images/instagram.png" /></li>
 				<li><img src="images/instagram.png" /></li>
@@ -495,7 +499,10 @@ As we did last year, we will go to a collection of bars that we crushed in the m
 	<script type="text/javascript" src="js/instafeed.min.js"></script>
 
 		<!-- bxSlider Javascript file -->
-	<script src="js/jquery.bxslider.min.js"></script>
+		<script type="text/javascript" src="js/jquerypp.custom.js"></script>
+		<script type="text/javascript" src="js/jquery.elastislide.js"></script>
+			
+
 
 
 	<script type="text/javascript">
@@ -505,15 +512,18 @@ As we did last year, we will go to a collection of bars that we crushed in the m
         clientId: '1339ca1a513444938b518b0d96b06be0',
         resolution: 'low_resolution',
         limit: '60',
-        template: '<img src="{{image}}" />'
+        template: '<li><img src="{{image}}" /></li>'
     });
     feed.run();
+
+    $( '.jslider' ).elastislide( {
+		minItems : 2
+		} );
+			
 </script>
 
 <script>
-    $(document).ready(function(){
-  $('.bxslider').bxSlider();
-});
+
 
 
 </script>
