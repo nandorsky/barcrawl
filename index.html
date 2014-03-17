@@ -259,7 +259,7 @@ As we did last year, we will go to a collection of bars that we crushed in the m
 						
 						<li class="note animated" data-animation="fadeInLeft" data-animation-delay="100">
 							<h4>
-								Southern Comfort (The Mill)
+								Southern Hospitality (The Mill)
 							</h4>
 							<div class="bar">
 							 <img src="images/mill.jpg" alt="" class="img-circle" />
@@ -378,16 +378,8 @@ As we did last year, we will go to a collection of bars that we crushed in the m
 
 				<p>Use the hashtag #PGTIMEMACHINE and see your photos display below.</p>
 			</div>
-			
-			<ul class="elastislide-list jslider">
-				<li id="instafeed"></li>
-				<li><img src="images/instagram.png" /></li>
-				<li><img src="images/instagram.png" /></li>
-				<li><img src="images/instagram.png" /></li>
-			</ul>
 
-
-				<!--<ul id="instafeed" class="bxslider"></ul> -->
+<div id="instafeed"></div> 
 
 	
 	</section>
@@ -415,7 +407,7 @@ As we did last year, we will go to a collection of bars that we crushed in the m
 			<!-- Second Header -->
 			<div class="page-desc">
 				Please register to attend the bar crawl and to sign up for provided bus transportation. <br />
-				<button style="margin-top:40px; margin-bottom:40px;" onclick="window.open('https://www.eventbrite.com/e/3rd-annual-post-grad-time-machine-bar-crawl-tickets-10924592751')" class="subscribe-btn subs">
+				<button style="margin-top:40px; margin-bottom:40px;" onclick="window.open('https://docs.google.com/forms/d/18WR4iiX0WueHFksUGtP4MWcxHH-36QMjB--UJE5iU38/viewform')" class="subscribe-btn subs">
 					Register
 					<i class="fa fa-angle-double-right"></i>
 					</button>
@@ -439,7 +431,7 @@ As we did last year, we will go to a collection of bars that we crushed in the m
 			<!-- Phone -->
 			<div class="col-xs-4 footer-box animated" data-animation="flipInY" data-animation-delay="0">
 				<p class="footer-text">
-					<span>This experience was brought to by Naste N8 and J Ro.</span>
+					<span>This experience was brought to by Naste N8 and J Ro.<br />(Nate is single by the way... 443-864-3203)</span>
 				</p>
 			</div>
 			
@@ -498,35 +490,27 @@ As we did last year, we will go to a collection of bars that we crushed in the m
 	<!-- Instafeed.js -->
 	<script type="text/javascript" src="js/instafeed.min.js"></script>
 
-		<!-- bxSlider Javascript file -->
-		<script type="text/javascript" src="js/jquerypp.custom.js"></script>
-		<script type="text/javascript" src="js/jquery.elastislide.js"></script>
+	<!-- bxSlider Javascript file -->
+	<script type="text/javascript" src="js/jquerypp.custom.js"></script>
+	<script type="text/javascript" src="js/jquery.elastislide.js"></script>
 			
-
-
 
 	<script type="text/javascript">
     var feed = new Instafeed({
         get: 'tagged',
         tagName: 'pgtimemachine',
         clientId: '1339ca1a513444938b518b0d96b06be0',
+        sortBy: 'most-liked',
         resolution: 'low_resolution',
         limit: '60',
+<<<<<<< HEAD
         template: '<img src="{{image}}" />'
+=======
+        template: '<div id="instafeed-pic"><a target="_blank" href="{{link}}"><img src="{{image}}" /><p>{{caption}}</p></a></div>'
+>>>>>>> FETCH_HEAD
     });
     feed.run();
-
-    $( '.jslider' ).elastislide( {
-		minItems : 2
-		} );
-			
-</script>
-
-<script>
-
-
-
-</script>
+	</script>
 
 	 <!-- End JS Files -->
 
