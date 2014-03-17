@@ -378,16 +378,8 @@ As we did last year, we will go to a collection of bars that we crushed in the m
 
 				<p>Use the hashtag #PGTIMEMACHINE and see your photos display below.</p>
 			</div>
-			
-			<ul class="elastislide-list jslider">
-				<li id="instafeed"></li>
-				<li><img src="images/instagram.png" /></li>
-				<li><img src="images/instagram.png" /></li>
-				<li><img src="images/instagram.png" /></li>
-			</ul>
 
-
-				<!--<ul id="instafeed" class="bxslider"></ul> -->
+<div id="instafeed"></div> 
 
 	
 	</section>
@@ -498,35 +490,23 @@ As we did last year, we will go to a collection of bars that we crushed in the m
 	<!-- Instafeed.js -->
 	<script type="text/javascript" src="js/instafeed.min.js"></script>
 
-		<!-- bxSlider Javascript file -->
-		<script type="text/javascript" src="js/jquerypp.custom.js"></script>
-		<script type="text/javascript" src="js/jquery.elastislide.js"></script>
+	<!-- bxSlider Javascript file -->
+	<script type="text/javascript" src="js/jquerypp.custom.js"></script>
+	<script type="text/javascript" src="js/jquery.elastislide.js"></script>
 			
-
-
 
 	<script type="text/javascript">
     var feed = new Instafeed({
         get: 'tagged',
         tagName: 'pgtimemachine',
         clientId: '1339ca1a513444938b518b0d96b06be0',
+        sortBy: 'most-liked',
         resolution: 'low_resolution',
         limit: '60',
-        template: '<li><img src="{{image}}" /></li>'
+        template: '<div id="instafeed-pic"><a href="#"><img src="{{image}}" /><p>{{caption}}</p></a></div>'
     });
     feed.run();
-
-    $( '.jslider' ).elastislide( {
-		minItems : 2
-		} );
-			
-</script>
-
-<script>
-
-
-
-</script>
+	</script>
 
 	 <!-- End JS Files -->
 
