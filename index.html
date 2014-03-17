@@ -503,7 +503,7 @@ As we did last year, we will go to a collection of bars that we crushed in the m
         sortBy: 'most-liked',
         resolution: 'low_resolution',
         limit: '60',
-        template: '<div id="instafeed-pic"><a href="#"><img src="{{image}}" /><p>{{caption}}</p></a></div>'
+        template: '<div id="instafeed-pic"><a target="_blank" href="{{link}}"><img src="{{image}}" /><p>{{caption}}</p></a></div>'
     });
     feed.run();
 	</script>
