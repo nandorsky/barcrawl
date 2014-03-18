@@ -331,6 +331,10 @@ ul.timeline{
 	height:60px;
 }
 
+#instafeed-pic {
+	height: 340px;
+}
+
 .navigation .logo a{
 	width:auto;
 	display:block;
